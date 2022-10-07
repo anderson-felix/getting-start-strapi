@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  strapi-db:
+    image: postgres:14.1
+    container_name: strapi-db
+    restart: always
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_PASSWORD: postgres
